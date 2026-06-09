@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterMovementScript: {fileID: 1446912793}
-  enemiesRequiredToDefeat: 0
+  enemiesRequiredToDefeat: 1
   levelProgress: 0
   isFirstLevel: 1
   healthProgression:
@@ -476,6 +476,52 @@ MonoBehaviour:
   - 2
   - 3
   healAmount: 10
+--- !u!1 &1213229861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1213229863}
+  - component: {fileID: 1213229862}
+  m_Layer: 0
+  m_Name: EnemyInstantiator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1213229862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213229861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e163b2e9a8935ff49afe8648ae413591, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyType1: {fileID: 1863546078}
+  enemyType2: {fileID: 1446912789}
+--- !u!4 &1213229863
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213229861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.72, y: 2.3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446912785
 GameObject:
   m_ObjectHideFlags: 0
@@ -709,7 +755,9 @@ MonoBehaviour:
   healthPoints: 0
   critChance: 0
   damageCooldown: 0.4
+  invincibilityCooldown: 2
   sceneProgressionManager: {fileID: 971924168}
+  loadSceneScript: {fileID: 0}
 --- !u!1 &1863546075
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,3 +1042,4 @@ SceneRoots:
   - {fileID: 971924167}
   - {fileID: 4718045860078859731}
   - {fileID: 886533122}
+  - {fileID: 1213229863}
