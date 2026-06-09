@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneProgressionManager : MonoBehaviour
 {
@@ -33,8 +34,19 @@ public class SceneProgressionManager : MonoBehaviour
 
     void UpdateProgress()
     {
-        levelProgress++;
+        levelProgress++; //ANALIZAR PORQUE NO SUMA
         PlayerPrefs.SetInt("LevelProgress", levelProgress);
+        LoadSceneWithName("Level" + levelProgress.ToString());
         // LOAD NEXT LEVEL
+    }
+
+    public void LoadSceneWithName(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void WinGame()
+    {
+        LoadSceneWithName("Victory Screen");
     }
 }

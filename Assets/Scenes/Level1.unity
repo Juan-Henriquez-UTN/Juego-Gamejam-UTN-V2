@@ -504,6 +504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971924167}
   - component: {fileID: 971924168}
+  - component: {fileID: 971924169}
   m_Layer: 0
   m_Name: SceneProgressionManager
   m_TagString: Untagged
@@ -539,7 +540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterMovementScript: {fileID: 1446912793}
-  enemiesRequiredToDefeat: 0
+  enemiesRequiredToDefeat: 1
   levelProgress: 0
   isFirstLevel: 1
   healthProgression:
@@ -551,6 +552,18 @@ MonoBehaviour:
   - 2
   - 3
   healAmount: 10
+--- !u!114 &971924169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971924165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527a967c4bb3c6f4c9deda63ca7efe98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &979255602
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,10 +972,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distance: 0
   isTargetingEnemy: 0
-  healthPoints: 0
+  healthPoints: 20
   critChance: 0
   damageCooldown: 0.4
+  invincibilityCooldown: 2
   sceneProgressionManager: {fileID: 971924168}
+  loadSceneScript: {fileID: 0}
 --- !u!1 &1863546075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,7 +1143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 101adfcb99cd04347816346a9005ee1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoints: 0
+  healthPoints: 10
   moveSpeed: 2
   sceneProgressionManager: {fileID: 971924168}
 --- !u!1660057539 &9223372036854775807

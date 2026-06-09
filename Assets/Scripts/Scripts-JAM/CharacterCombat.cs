@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterCombat : MonoBehaviour
 {
@@ -10,28 +11,39 @@ public class CharacterCombat : MonoBehaviour
     public float damageCooldown = 0.4f; // Segundos entre ticks de daño
     private float damageTimer = 0f;
 
+    public float invincibilityCooldown = 2f; // Segundos entre ticks de daño
+    private float invincibilityTimer = 0f;
+
     public SceneProgressionManager sceneProgressionManager;
+    public LoadScene loadSceneScript;
     private int levelProgressCounter;
 
     void Start()
     {
+        loadSceneScript = GameObject.Find("SceneProgressionManager").GetComponent<LoadScene>();
         levelProgressCounter = PlayerPrefs.GetInt("LevelProgress", 0);
         isTargetingEnemy = false;
+        healthPoints = sceneProgressionManager.healthProgression[levelProgressCounter];
     }
 
     void Update()
     {
         if (damageTimer > 0)
             damageTimer -= Time.deltaTime;
+        if (invincibilityTimer > 0)
+            invincibilityTimer -= Time.deltaTime;
+
+        if (healthPoints <= 0)
+            DefeatPlayer();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Enemy"))
-        {
-            ApplyHitEffect(other.GetComponent<EnemyManager>());
-        }
-    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.gameObject.CompareTag("Enemy"))
+    //    {
+    //        ApplyHitEffect(other.GetComponent<EnemyManager>());
+    //    }
+    //}
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -39,6 +51,16 @@ public class CharacterCombat : MonoBehaviour
         {
             ApplyHitEffect(other.GetComponent<EnemyManager>());
             damageTimer = damageCooldown;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Enemy proyectile")) && invincibilityTimer <= 0) //Diferentes tags segun tipo de enemigo y ataque para distintos damage
+        {
+            Debug.Log("DAMAGE");
+            invincibilityTimer = invincibilityCooldown;
+            healthPoints--;
         }
     }
 
@@ -75,5 +97,10 @@ public class CharacterCombat : MonoBehaviour
     {
         healthPoints += amount;
         Debug.Log($"Curado! HP actual: {healthPoints}");
+    }
+
+    public void DefeatPlayer()
+    {
+        loadSceneScript.LoadSceneWithName("Defeat screen");
     }
 }
