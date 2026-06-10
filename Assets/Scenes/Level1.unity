@@ -165,6 +165,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &182444038 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7019001144298205190, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+  m_PrefabInstance: {fileID: 4718045860078859731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &189085670 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7429764856329809699, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
@@ -862,6 +873,8 @@ MonoBehaviour:
   characterMovementScript: {fileID: 1446912793}
   enemiesRequiredToDefeat: 10
   levelProgress: 0
+  levelTimer: 0
+  timeText: {fileID: 182444038}
   isFirstLevel: 1
   healthProgression:
   - 1
@@ -1406,6 +1419,7 @@ MonoBehaviour:
   isTargetingEnemy: 0
   healthPoints: 0
   healthPerLevel: 1
+  damagePerLevel: 1
   critChance: 0
   damageCooldown: 0.4
   invincibilityCooldown: 2
@@ -2286,8 +2300,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 519420031}
     - target: {fileID: 8654530347587891931, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.17430742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654530347587891931, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.393
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654530347587891931, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.07761479
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654530347587891931, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654530347587891931, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654530347587891931, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8654530347587891931, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
