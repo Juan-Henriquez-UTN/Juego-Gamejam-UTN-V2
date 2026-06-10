@@ -12,7 +12,7 @@ public class EnemyInstantiator : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -20,9 +20,9 @@ public class EnemyInstantiator : MonoBehaviour
     {
         if (spawnAmountCounter < 10)
         {
-            SpawnEnemy(enemyType2);   
+            SpawnEnemy(enemyType2);
         }
-        else if(spawnAmountCounter < 20)
+        else if (spawnAmountCounter < 20)
             SpawnEnemy(enemyType1);
     }
 

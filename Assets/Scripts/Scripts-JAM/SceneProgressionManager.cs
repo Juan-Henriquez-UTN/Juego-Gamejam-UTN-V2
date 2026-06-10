@@ -19,7 +19,7 @@ public class SceneProgressionManager : MonoBehaviour
             levelProgress = PlayerPrefs.GetInt("LevelProgress", 0); 
         else
         {
-            levelProgress = 0;
+            levelProgress = 1;
             PlayerPrefs.SetInt("LevelProgress", levelProgress);
         }
     }
@@ -34,7 +34,7 @@ public class SceneProgressionManager : MonoBehaviour
 
     void UpdateProgress()
     {
-        levelProgress++; //ANALIZAR PORQUE NO SUMA
+        levelProgress++;
         PlayerPrefs.SetInt("LevelProgress", levelProgress);
         LoadSceneWithName("Level" + levelProgress.ToString());
         // LOAD NEXT LEVEL

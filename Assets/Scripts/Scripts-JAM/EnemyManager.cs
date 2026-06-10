@@ -2,22 +2,29 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
 {
+    public bool isRangedEnemy;
     public int healthPoints;
+    public float shootingRange;
     public float moveSpeed = 2f; // Necesita su propia velocidad para el slow
 
     private float slowTimer = 0f;
     private float originalSpeed;
+    private float distanceToPlayer;
     private bool isSlowed = false;
 
     public SceneProgressionManager sceneProgressionManager;
+    public GameObject player;
 
     void Start()
     {
         originalSpeed = moveSpeed;
+        player = GameObject.FindWithTag("Player");
     }
 
     void Update()
     {
+        distanceToPlayer = Vector2.Distance(transform.position, player.transform.position);
+
         // Manejo del slow
         if (isSlowed)
         {
@@ -28,6 +35,30 @@ public class EnemyManager : MonoBehaviour
                 isSlowed = false;
             }
         }
+
+        EnemyMovement(isRangedEnemy);
+    }
+
+    public void EnemyMovement(bool isRanged)
+    {
+        if (!isRanged)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        }
+        else
+        {
+            if (distanceToPlayer < shootingRange)
+            {
+                Shoot();
+            }
+            else
+                transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+        }
+    }
+
+    public void Shoot()
+    {
+        Debug.Log("Shooting");
     }
 
     public void TakeDamage()
