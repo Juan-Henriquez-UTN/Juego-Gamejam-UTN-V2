@@ -507,6 +507,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyType1: {fileID: 1863546078}
   enemyType2: {fileID: 1446912789}
+  spawnAmountCounter: 0
 --- !u!4 &1213229863
 Transform:
   m_ObjectHideFlags: 0

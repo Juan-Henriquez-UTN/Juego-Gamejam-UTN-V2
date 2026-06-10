@@ -1,37 +1,43 @@
 fileFormatVersion: 2
-guid: 937e8b2b4bf642b40af6d7029cf5ada7
+guid: cfffe67f663c03c418e48017d97c1146
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8911964731738093205
-    second: piano walk white_0
+      213: 6530557704540386436
+    second: drummer idle white_0
   - first:
-      213: 186214314015877943
-    second: piano walk white_1
+      213: 2805748334037780983
+    second: drummer idle white_1
   - first:
-      213: 675254596617036638
-    second: piano walk white_2
+      213: 1914239689010312345
+    second: drummer idle white_2
   - first:
-      213: 7884745874586783744
-    second: piano walk white_3
+      213: 8360329512628253318
+    second: drummer idle white_3
   - first:
-      213: 8537528716055901121
-    second: piano walk white_4
+      213: 3615091667162301445
+    second: drummer idle white_4
   - first:
-      213: -8854360539923705658
-    second: piano walk white_5
+      213: 8906205695581313587
+    second: drummer idle white_5
   - first:
-      213: -4281109129196140277
-    second: piano walk white_6
+      213: 6057091439560431784
+    second: drummer idle white_6
   - first:
-      213: 6747782389230440027
-    second: piano walk white_7
+      213: 6057279973380092461
+    second: drummer idle white_7
   - first:
-      213: -3031929612180099707
-    second: piano walk white_8
+      213: -4730818617816567785
+    second: drummer idle white_8
   - first:
-      213: -8101125665158356600
-    second: piano walk white_9
+      213: 186268217795313407
+    second: drummer idle white_9
+  - first:
+      213: 539965914478424398
+    second: drummer idle white_10
+  - first:
+      213: 5564689970131887167
+    second: drummer idle white_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,95 +133,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piano walk white_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 596fe06b4b8adab70800000000000000
-      internalID: 8911964731738093205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piano walk white_1
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 73b62079ee0959200800000000000000
-      internalID: 186214314015877943
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piano walk white_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e53ee4c5a7cfe5900800000000000000
-      internalID: 675254596617036638
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piano walk white_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 96
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 000d8f6099e3c6d60800000000000000
-      internalID: 7884745874586783744
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: piano walk white_4
+      name: drummer idle white_0
       rect:
         serializedVersion: 2
         x: 0
@@ -230,14 +148,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1c3753c22256b7670800000000000000
-      internalID: 8537528716055901121
+      spriteID: 484f154c1a331aa50800000000000000
+      internalID: 6530557704540386436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_5
+      name: drummer idle white_1
       rect:
         serializedVersion: 2
         x: 32
@@ -252,14 +170,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6c09c98500efe1580800000000000000
-      internalID: -8854360539923705658
+      spriteID: 7f9477b8e3500f620800000000000000
+      internalID: 2805748334037780983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_6
+      name: drummer idle white_2
       rect:
         serializedVersion: 2
         x: 64
@@ -274,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b090595ede17694c0800000000000000
-      internalID: -4281109129196140277
+      spriteID: 994f966eadeb09a10800000000000000
+      internalID: 1914239689010312345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_7
+      name: drummer idle white_3
       rect:
         serializedVersion: 2
         x: 96
@@ -296,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b5e87bbe450f4ad50800000000000000
-      internalID: 6747782389230440027
+      spriteID: 682fb65956bd50470800000000000000
+      internalID: 8360329512628253318
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_8
+      name: drummer idle white_4
       rect:
         serializedVersion: 2
         x: 0
@@ -318,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58d6402e41c6ce5d0800000000000000
-      internalID: -3031929612180099707
+      spriteID: 5040fabb7b26b2230800000000000000
+      internalID: 3615091667162301445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_9
+      name: drummer idle white_5
       rect:
         serializedVersion: 2
         x: 32
@@ -340,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 881af6f0125039f80800000000000000
-      internalID: -8101125665158356600
+      spriteID: 33a5fad94e2399b70800000000000000
+      internalID: 8906205695581313587
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_10
+      name: drummer idle white_6
       rect:
         serializedVersion: 2
         x: 64
@@ -360,16 +278,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4463f139267b57f47b84e64b86dc0078
-      internalID: 341128573
+      spriteID: 8a81f0b829c1f0450800000000000000
+      internalID: 6057091439560431784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_11
+      name: drummer idle white_7
       rect:
         serializedVersion: 2
         x: 96
@@ -382,16 +300,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d2cc400a93d71de46b8b5d64913bca2e
-      internalID: 145274071
+      spriteID: d22786efa08cf0450800000000000000
+      internalID: 6057279973380092461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_12
+      name: drummer idle white_8
       rect:
         serializedVersion: 2
         x: 0
@@ -404,16 +322,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 64be87dacdc56174580fa1a8d04f8cdb
-      internalID: -827865746
+      spriteID: 7103d343881c85eb0800000000000000
+      internalID: -4730818617816567785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_13
+      name: drummer idle white_9
       rect:
         serializedVersion: 2
         x: 32
@@ -426,16 +344,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7bca2c8027aa0464696fa45e2c31402f
-      internalID: -514642795
+      spriteID: ffe72aa05f1c59200800000000000000
+      internalID: 186268217795313407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_14
+      name: drummer idle white_10
       rect:
         serializedVersion: 2
         x: 64
@@ -448,16 +366,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1e2842c8e6972f64680588a7fd72bc83
-      internalID: 935860338
+      spriteID: e413e4b63285e7700800000000000000
+      internalID: 539965914478424398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: piano walk white_15
+      name: drummer idle white_11
       rect:
         serializedVersion: 2
         x: 96
@@ -470,10 +388,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a59b5271b3a74ef43adf08e1b744d45a
-      internalID: -481833147
+      spriteID: f34e3ea7b00c93d40800000000000000
+      internalID: 5564689970131887167
       vertices: []
       indices: 
       edges: []
@@ -482,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0b7d196d395f4224c8dabe2b03175e98
+    spriteID: d2866aba87af48e47be9540971986a80
     internalID: 0
     vertices: []
     indices: 
@@ -492,22 +410,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      piano walk white_0: 8911964731738093205
-      piano walk white_1: 186214314015877943
-      piano walk white_10: 341128573
-      piano walk white_11: 145274071
-      piano walk white_12: -827865746
-      piano walk white_13: -514642795
-      piano walk white_14: 935860338
-      piano walk white_15: -481833147
-      piano walk white_2: 675254596617036638
-      piano walk white_3: 7884745874586783744
-      piano walk white_4: 8537528716055901121
-      piano walk white_5: -8854360539923705658
-      piano walk white_6: -4281109129196140277
-      piano walk white_7: 6747782389230440027
-      piano walk white_8: -3031929612180099707
-      piano walk white_9: -8101125665158356600
+      drummer idle white_0: 6530557704540386436
+      drummer idle white_1: 2805748334037780983
+      drummer idle white_10: 539965914478424398
+      drummer idle white_11: 5564689970131887167
+      drummer idle white_2: 1914239689010312345
+      drummer idle white_3: 8360329512628253318
+      drummer idle white_4: 3615091667162301445
+      drummer idle white_5: 8906205695581313587
+      drummer idle white_6: 6057091439560431784
+      drummer idle white_7: 6057279973380092461
+      drummer idle white_8: -4730818617816567785
+      drummer idle white_9: 186268217795313407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
