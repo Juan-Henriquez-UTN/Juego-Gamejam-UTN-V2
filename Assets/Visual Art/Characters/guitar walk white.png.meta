@@ -29,6 +29,15 @@ TextureImporter:
   - first:
       213: 3691875312376369006
     second: guitar walk white_8
+  - first:
+      213: -8422519985035729919
+    second: guitar walk white_9
+  - first:
+      213: 6753885464461662149
+    second: guitar walk white_10
+  - first:
+      213: 1301213082854643654
+    second: guitar walk white_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,10 +136,10 @@ TextureImporter:
       name: guitar walk white_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 96
+        x: 3
+        y: 31
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,9 +158,9 @@ TextureImporter:
       name: guitar walk white_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
+        x: 5
+        y: 63
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -171,10 +180,10 @@ TextureImporter:
       name: guitar walk white_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 35
+        y: 31
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +202,10 @@ TextureImporter:
       name: guitar walk white_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 37
+        y: 63
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,9 +224,9 @@ TextureImporter:
       name: guitar walk white_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
+        x: 67
+        y: 31
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -237,9 +246,9 @@ TextureImporter:
       name: guitar walk white_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
+        x: 69
+        y: 63
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -259,10 +268,10 @@ TextureImporter:
       name: guitar walk white_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 101
+        y: 63
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +290,10 @@ TextureImporter:
       name: guitar walk white_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 5
+        y: 0
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,9 +312,9 @@ TextureImporter:
       name: guitar walk white_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 37
         y: 0
-        width: 32
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -325,20 +334,20 @@ TextureImporter:
       name: guitar walk white_9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 69
         y: 0
-        width: 32
-        height: 32
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b8b1704a6a195fa41a34a03167e2fdd4
-      internalID: -261137454
+      spriteID: 1042152b2b23d1b80800000000000000
+      internalID: -8422519985035729919
       vertices: []
       indices: 
       edges: []
@@ -347,20 +356,20 @@ TextureImporter:
       name: guitar walk white_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 99
+        y: 31
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9a189f64a9a252e4b90349e7d1d7e458
-      internalID: -1837944987
+      spriteID: 5c759eadb0f9abd50800000000000000
+      internalID: 6753885464461662149
       vertices: []
       indices: 
       edges: []
@@ -369,9 +378,9 @@ TextureImporter:
       name: guitar walk white_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 101
         y: 0
-        width: 32
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -379,10 +388,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 55edfa0d6f9477f4abf11a708b9f8746
-      internalID: 1666976757
+      spriteID: 6c754ac9766de0210800000000000000
+      internalID: 1301213082854643654
       vertices: []
       indices: 
       edges: []
@@ -391,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a17e68437ca27ea48be4c68e30491c31
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -403,8 +412,8 @@ TextureImporter:
     nameFileIdTable:
       guitar walk white_0: 4972112682646871573
       guitar walk white_1: -1916705831157273347
-      guitar walk white_10: -1837944987
-      guitar walk white_11: 1666976757
+      guitar walk white_10: 6753885464461662149
+      guitar walk white_11: 1301213082854643654
       guitar walk white_2: 5851136235678350610
       guitar walk white_3: -1596762943732449568
       guitar walk white_4: -7091787805395893808
@@ -412,7 +421,7 @@ TextureImporter:
       guitar walk white_6: -5898096537467264234
       guitar walk white_7: -377712981197067104
       guitar walk white_8: 3691875312376369006
-      guitar walk white_9: -261137454
+      guitar walk white_9: -8422519985035729919
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

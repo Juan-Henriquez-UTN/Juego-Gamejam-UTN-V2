@@ -136,10 +136,10 @@ TextureImporter:
       name: guitar idle white_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 96
+        x: 3
+        y: 31
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,9 +158,9 @@ TextureImporter:
       name: guitar idle white_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
-        width: 32
+        x: 5
+        y: 63
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: guitar idle white_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 32
-        height: 32
+        x: 37
+        y: 63
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: guitar idle white_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
-        width: 32
-        height: 32
+        x: 69
+        y: 63
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,9 +224,9 @@ TextureImporter:
       name: guitar idle white_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
+        x: 99
+        y: 31
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,9 +246,9 @@ TextureImporter:
       name: guitar idle white_5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
+        x: 101
+        y: 63
+        width: 24
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: guitar idle white_6
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
-        width: 32
-        height: 32
+        x: 5
+        y: 0
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: guitar idle white_7
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
-        width: 32
-        height: 32
+        x: 35
+        y: 31
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +312,10 @@ TextureImporter:
       name: guitar idle white_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 67
+        y: 31
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: guitar idle white_9
       rect:
         serializedVersion: 2
-        x: 32
+        x: 101
         y: 0
-        width: 32
-        height: 32
+        width: 24
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: guitar idle white_10
       rect:
         serializedVersion: 2
-        x: 64
+        x: 37
         y: 0
-        width: 32
-        height: 32
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: guitar idle white_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 69
         y: 0
-        width: 32
-        height: 32
+        width: 24
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: ae09030042806f444a9cc7ce36be50d8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
