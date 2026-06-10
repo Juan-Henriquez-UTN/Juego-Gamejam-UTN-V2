@@ -26,12 +26,8 @@ public class EnemyInstantiator : MonoBehaviour
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
         {
-            if (spawnAmountCounter < 10)
-            {
-                SpawnEnemy(enemyType2, enemy2spawnCount);
-            }
-            else if (spawnAmountCounter < 20)
-                SpawnEnemy(enemyType1, enemy1spawnCount);
+             SpawnEnemy(enemyType2, enemy2spawnCount);
+             SpawnEnemy(enemyType1, enemy1spawnCount);
         }
     }
 

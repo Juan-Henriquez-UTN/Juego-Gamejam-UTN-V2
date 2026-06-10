@@ -61,17 +61,17 @@ public class EnemyManager : MonoBehaviour
         Debug.Log("Shooting");
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int playerLevel)
     {
-        healthPoints--;
+        healthPoints -= playerLevel;
         if (healthPoints <= 0)
             DefeatEnemy();
     }
 
-    public void TakeCriticalDamage()
+    public void TakeCriticalDamage(int playerLevel)
     {
         Debug.Log("CRIT");
-        healthPoints -= 2;
+        healthPoints -= 2 * playerLevel;
         if (healthPoints <= 0)
             DefeatEnemy();
     }
@@ -90,13 +90,12 @@ public class EnemyManager : MonoBehaviour
     {
         // Nivel 3: curar al jugador al derrotar enemigo
         int levelProgressCounter = PlayerPrefs.GetInt("LevelProgress", 0);
-        if (levelProgressCounter == 2)
+        CharacterCombat player = FindFirstObjectByType<CharacterCombat>();
+        if (levelProgressCounter == 2 && player != null)
         {
-            CharacterCombat player = FindFirstObjectByType<CharacterCombat>();
-            if (player != null)
-                player.Heal(sceneProgressionManager.healAmount);
+            player.Heal(sceneProgressionManager.healAmount);
         }
-
+        player.exp++;
         sceneProgressionManager.enemiesRequiredToDefeat--;
         Destroy(gameObject);
     }

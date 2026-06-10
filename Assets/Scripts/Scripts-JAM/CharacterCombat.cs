@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -6,7 +7,10 @@ public class CharacterCombat : MonoBehaviour
     public float distance;
     public bool isTargetingEnemy;
     public float healthPoints;
+    public float healthPerLevel;
+    public int damagePerLevel = 1;
     public float critChance;
+    private CharacterMovement characterMovement;
 
     public float damageCooldown = 0.4f; // Segundos entre ticks de daño
     private float damageTimer = 0f;
@@ -17,6 +21,11 @@ public class CharacterCombat : MonoBehaviour
     public SceneProgressionManager sceneProgressionManager;
     public LoadScene loadSceneScript;
     private int levelProgressCounter;
+
+    public int exp;
+    public int expThreshold;
+    public int level;
+    public TextMeshProUGUI levelText;
 
     void Start()
     {
@@ -35,6 +44,9 @@ public class CharacterCombat : MonoBehaviour
 
         if (healthPoints <= 0)
             DefeatPlayer();
+
+        if (exp >= expThreshold)
+            LevelUp();
     }
 
     //private void OnTriggerEnter2D(Collider2D other)
@@ -74,9 +86,9 @@ public class CharacterCombat : MonoBehaviour
         bool isCrit = critRoll < critChance;
 
         if (isCrit)
-            enemy.TakeCriticalDamage();
+            enemy.TakeCriticalDamage(damagePerLevel);
         else
-            enemy.TakeDamage();
+            enemy.TakeDamage(damagePerLevel);
 
         // Efecto según nivel
         switch (levelProgressCounter)
@@ -102,5 +114,14 @@ public class CharacterCombat : MonoBehaviour
     public void DefeatPlayer()
     {
         loadSceneScript.LoadSceneWithName("Defeat screen");
+    }
+
+    public void LevelUp()
+    {
+        level++;
+        healthPoints += healthPerLevel;
+        damagePerLevel++;
+        exp = 0;
+        levelText.text = ("Lvl " + level.ToString());
     }
 }
