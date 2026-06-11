@@ -23,8 +23,11 @@ public class EnemyManager : MonoBehaviour
     public SceneProgressionManager sceneProgressionManager;
     public GameObject player;
 
+    private SpriteRenderer m_spriteRenderer;
+
     void Start()
     {
+        m_spriteRenderer = GetComponent<SpriteRenderer>();
         originalSpeed = moveSpeed;
         player = GameObject.FindWithTag("Player");
         animator = GetComponent<Animator>();
@@ -53,6 +56,7 @@ public class EnemyManager : MonoBehaviour
 
     void UpdateAnimator()
     {
+        m_spriteRenderer.color = Color.white;
         if (animator == null) return;
         animator.SetBool("IsShooting", isShooting);
 
@@ -121,6 +125,7 @@ public class EnemyManager : MonoBehaviour
     public void TakeDamage(int playerLevel)
     {
         healthPoints -= playerLevel;
+        m_spriteRenderer.color = Color.red;
         if (healthPoints <= 0)
             DefeatEnemy();
     }
@@ -128,6 +133,7 @@ public class EnemyManager : MonoBehaviour
     public void TakeCriticalDamage(int playerLevel)
     {
         Debug.Log("CRIT");
+        m_spriteRenderer.color = Color.black;
         healthPoints -= 2 * playerLevel;
         if (healthPoints <= 0)
             DefeatEnemy();

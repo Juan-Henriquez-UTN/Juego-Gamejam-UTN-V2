@@ -710,6 +710,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268909257}
   m_CullTransparentMesh: 1
+--- !u!114 &323868580 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7130331284466302524, guid: 1efb86faae0d05c4b8f895cde8b6d179, type: 3}
+  m_PrefabInstance: {fileID: 4718045860078859731}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &413359036
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1172,6 @@ MonoBehaviour:
   enemy1spawnCount: 1
   enemy2spawnCount: 1
   enemy3spawnCount: 0
-  spawnAmountCounter: 0
   spawnTimer: 0
   spawnTimeDifference: 4
 --- !u!4 &750273728
@@ -1513,6 +1523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971924167}
   - component: {fileID: 971924168}
+  - component: {fileID: 971924169}
   m_Layer: 0
   m_Name: SceneProgressionManager
   m_TagString: Untagged
@@ -1556,14 +1567,26 @@ MonoBehaviour:
   enemyProgressBar: {fileID: 4718045860078859732}
   isFirstLevel: 1
   healthProgression:
-  - 20
-  - 30
-  - 40
-  speedProgression:
   - 10
-  - 12
-  - 14
+  - 15
+  - 20
+  speedProgression:
+  - 3
+  - 5
+  - 7
   healAmount: 10
+--- !u!114 &971924169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971924165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 527a967c4bb3c6f4c9deda63ca7efe98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &998683502
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,7 +1784,6 @@ MonoBehaviour:
   enemy1spawnCount: 1
   enemy2spawnCount: 1
   enemy3spawnCount: 0
-  spawnAmountCounter: 0
   spawnTimer: 0
   spawnTimeDifference: 4
 --- !u!4 &1186394595
@@ -1814,7 +1836,6 @@ MonoBehaviour:
   enemy1spawnCount: 1
   enemy2spawnCount: 1
   enemy3spawnCount: 0
-  spawnAmountCounter: 0
   spawnTimer: 0
   spawnTimeDifference: 4
 --- !u!4 &1190410091
@@ -1867,7 +1888,6 @@ MonoBehaviour:
   enemy1spawnCount: 1
   enemy2spawnCount: 1
   enemy3spawnCount: 0
-  spawnAmountCounter: 0
   spawnTimer: 0
   spawnTimeDifference: 4
 --- !u!4 &1213229863
@@ -2407,8 +2427,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.10506415, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: -2399385410139513360, guid: 518bb5e5d5c58ef42ba91e5db153dabd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2428,7 +2448,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.336987, y: 1.336987, z: 1.336987}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 263233664}
@@ -2494,18 +2514,18 @@ MonoBehaviour:
   maxHP: 0
   healthPerLevel: 1
   damagePerLevel: 1
-  critChance: 0
+  critChance: 10
   damageCooldown: 0.4
   damageTimer: 0
-  invincibilityCooldown: 2
+  invincibilityCooldown: 1.5
   invincibilityTimer: 0
   sceneProgressionManager: {fileID: 971924168}
   loadSceneScript: {fileID: 0}
   exp: 0
-  expThreshold: 2
+  expThreshold: 3
   level: 0
   levelText: {fileID: 189085670}
-  healthBar: {fileID: 0}
+  healthBar: {fileID: 323868580}
 --- !u!1 &1521006982
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,7 +3726,7 @@ PrefabInstance:
       objectReference: {fileID: 1446912785}
     - target: {fileID: 1302007091055040901, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
       propertyPath: healthPoints
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1302007091055040901, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
       propertyPath: sceneProgressionManager
@@ -4013,7 +4033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 471152699053577190, guid: deb000bb81d2989469f02ba610e1df6a, type: 3}
       propertyPath: healthPoints
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 471152699053577190, guid: deb000bb81d2989469f02ba610e1df6a, type: 3}
       propertyPath: projectilePrefab
