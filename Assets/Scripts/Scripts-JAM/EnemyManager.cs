@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour
@@ -22,12 +23,10 @@ public class EnemyManager : MonoBehaviour
 
     public SceneProgressionManager sceneProgressionManager;
     public GameObject player;
-
-    private SpriteRenderer m_spriteRenderer;
+    public GameObject critTextPrefab;
 
     void Start()
     {
-        m_spriteRenderer = GetComponent<SpriteRenderer>();
         originalSpeed = moveSpeed;
         player = GameObject.FindWithTag("Player");
         animator = GetComponent<Animator>();
@@ -56,13 +55,13 @@ public class EnemyManager : MonoBehaviour
 
     void UpdateAnimator()
     {
-        m_spriteRenderer.color = Color.white;
         if (animator == null) return;
         animator.SetBool("IsShooting", isShooting);
 
         Vector2 moveDir = (player.transform.position - transform.position).normalized; // Calcular la direccion de movimiento hacia el jugador
         if (!isShooting)
         {
+            Debug.Log(moveDir.x);
             animator.SetFloat("MoveX", moveDir.x);
             animator.SetFloat("MoveY", moveDir.y);
         }
@@ -125,7 +124,6 @@ public class EnemyManager : MonoBehaviour
     public void TakeDamage(int playerLevel)
     {
         healthPoints -= playerLevel;
-        m_spriteRenderer.color = Color.red;
         if (healthPoints <= 0)
             DefeatEnemy();
     }
@@ -133,7 +131,8 @@ public class EnemyManager : MonoBehaviour
     public void TakeCriticalDamage(int playerLevel)
     {
         Debug.Log("CRIT");
-        m_spriteRenderer.color = Color.black;
+        GameObject critText = Instantiate(critTextPrefab, transform.position, Quaternion.identity);
+        Destroy(critText, 2);
         healthPoints -= 2 * playerLevel;
         if (healthPoints <= 0)
             DefeatEnemy();

@@ -1759,6 +1759,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 471152699053577190, guid: deb000bb81d2989469f02ba610e1df6a, type: 3}
+      propertyPath: critTextPrefab
+      value: 
+      objectReference: {fileID: 6498741353848476861, guid: 2f2591d88d1cad644800c3310623795c, type: 3}
+    - target: {fileID: 471152699053577190, guid: deb000bb81d2989469f02ba610e1df6a, type: 3}
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 4413063149615462312, guid: 9f97fb75916e47c43bae1bf4042542bc, type: 3}
@@ -2169,6 +2173,10 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 1302007091055040901, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
+      propertyPath: critTextPrefab
+      value: 
+      objectReference: {fileID: 6498741353848476861, guid: 2f2591d88d1cad644800c3310623795c, type: 3}
     - target: {fileID: 1302007091055040901, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
       propertyPath: sceneProgressionManager
       value: 
@@ -2607,6 +2615,10 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 1302007091055040901, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
+      propertyPath: critTextPrefab
+      value: 
+      objectReference: {fileID: 6498741353848476861, guid: 2f2591d88d1cad644800c3310623795c, type: 3}
     - target: {fileID: 1302007091055040901, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
       propertyPath: sceneProgressionManager
       value: 
@@ -3229,6 +3241,10 @@ PrefabInstance:
       propertyPath: shootingRange
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 471152699053577190, guid: deb000bb81d2989469f02ba610e1df6a, type: 3}
+      propertyPath: critTextPrefab
+      value: 
+      objectReference: {fileID: 6498741353848476861, guid: 2f2591d88d1cad644800c3310623795c, type: 3}
     - target: {fileID: 471152699053577190, guid: deb000bb81d2989469f02ba610e1df6a, type: 3}
       propertyPath: shotsPerAttack
       value: 10
