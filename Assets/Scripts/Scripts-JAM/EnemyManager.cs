@@ -7,16 +7,18 @@ public class EnemyManager : MonoBehaviour
     public float shootingRange;
     public float moveSpeed = 2f;
 
-    public float attackSpeed = 1f; // Disparos por segundo
+    public float attackSpeed = 1f;
     public float projectileSpeed = 5f;
     public int shotsPerAttack = 1;
-    public GameObject projectilePrefab; // Drag and drop tu projectile prefab en el Inspector
+    public GameObject projectilePrefab;
 
     private float shootTimer = 0f;
     private float slowTimer = 0f;
     private float originalSpeed;
     private float distanceToPlayer;
     private bool isSlowed = false;
+    private bool isShooting = false;
+    private Animator animator;
 
     public SceneProgressionManager sceneProgressionManager;
     public GameObject player;
@@ -25,6 +27,7 @@ public class EnemyManager : MonoBehaviour
     {
         originalSpeed = moveSpeed;
         player = GameObject.FindWithTag("Player");
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -45,18 +48,27 @@ public class EnemyManager : MonoBehaviour
             shootTimer -= Time.deltaTime;
 
         EnemyMovement(isRangedEnemy);
+        UpdateAnimator();
+    }
+
+    void UpdateAnimator()
+    {
+        if (animator == null) return;
+        animator.SetBool("IsShooting", isShooting);
     }
 
     public void EnemyMovement(bool isRanged)
     {
         if (!isRanged)
         {
+            isShooting = false;
             transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
         }
         else
         {
             if (distanceToPlayer < shootingRange)
             {
+                isShooting = true;
                 if (shootTimer <= 0)
                 {
                     Shoot();
@@ -64,22 +76,24 @@ public class EnemyManager : MonoBehaviour
                 }
             }
             else
+            {
+                isShooting = false;
                 transform.position = Vector2.MoveTowards(transform.position, player.transform.position, moveSpeed * Time.deltaTime);
+            }
         }
     }
 
     public void Shoot()
     {
-        if (projectilePrefab == null) return; // Evita errores si no se asigna el prefab
+        if (projectilePrefab == null) return;
 
-        Vector2 direction = (player.transform.position - transform.position).normalized; 
+        Vector2 direction = (player.transform.position - transform.position).normalized;
 
-        for (int i = 0; i < shotsPerAttack; i++) 
+        for (int i = 0; i < shotsPerAttack; i++)
         {
-            // Si hay mas de 1 proyectil, los distribuye en abanico
             float angleOffset = 0f;
             if (shotsPerAttack > 1)
-                angleOffset = Mathf.Lerp(-20f, 20f, (float)i / (shotsPerAttack - 1)); // Distribuye los ángulos entre -20 y 20 grados
+                angleOffset = Mathf.Lerp(-20f, 20f, (float)i / (shotsPerAttack - 1));
 
             Vector2 spreadDirection = Quaternion.Euler(0, 0, angleOffset) * direction;
 
@@ -88,7 +102,7 @@ public class EnemyManager : MonoBehaviour
             if (rb != null)
                 rb.linearVelocity = spreadDirection * projectileSpeed;
 
-            Destroy(projectile, 5f); // se destruye solo si no golpea nada
+            Destroy(projectile, 5f);
         }
     }
 
