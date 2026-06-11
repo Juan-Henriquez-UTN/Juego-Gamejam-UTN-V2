@@ -10,7 +10,6 @@ public class EnemyInstantiator : MonoBehaviour
     public int enemy2spawnCount;
     public int enemy3spawnCount;
 
-    public int spawnAmountCounter;
     public float spawnTimer;
     public float spawnTimeDifference;
 
@@ -26,7 +25,8 @@ public class EnemyInstantiator : MonoBehaviour
         spawnTimer -= Time.deltaTime;
         if (spawnTimer <= 0)
         {
-             SpawnEnemy(enemyType2, enemy2spawnCount);
+            SpawnEnemy(enemyType3, enemy3spawnCount);
+            SpawnEnemy(enemyType2, enemy2spawnCount);
              SpawnEnemy(enemyType1, enemy1spawnCount);
         }
     }
@@ -37,7 +37,6 @@ public class EnemyInstantiator : MonoBehaviour
         {
             Rigidbody2D clone;
             clone = Instantiate(enemy, transform.position, transform.rotation);
-            spawnAmountCounter++;
         }
         spawnTimer = spawnTimeDifference;
     }
