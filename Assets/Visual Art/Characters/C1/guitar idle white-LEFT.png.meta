@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 80e26190cb2fda7458fb806bca5c0f3c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8916607801052993395
+    second: guitar idle white-LEFT_0
+  - first:
+      213: 7153509977686824642
+    second: guitar idle white-LEFT_1
+  - first:
+      213: 2511145986905828237
+    second: guitar idle white-LEFT_2
+  - first:
+      213: 3166664474749435257
+    second: guitar idle white-LEFT_3
+  - first:
+      213: -6765795942820391477
+    second: guitar idle white-LEFT_4
+  - first:
+      213: 818219576395045608
+    second: guitar idle white-LEFT_5
+  - first:
+      213: -8577933936414103975
+    second: guitar idle white-LEFT_6
+  - first:
+      213: -5373140940190890785
+    second: guitar idle white-LEFT_7
+  - first:
+      213: 8778548986254830156
+    second: guitar idle white-LEFT_8
+  - first:
+      213: 6340606301308846986
+    second: guitar idle white-LEFT_9
+  - first:
+      213: -8874334460106054894
+    second: guitar idle white-LEFT_10
+  - first:
+      213: 8076520294541483460
+    second: guitar idle white-LEFT_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 63
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3779d378d872ebb70800000000000000
+      internalID: 8916607801052993395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 31
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c65c3d7c6f564360800000000000000
+      internalID: 7153509977686824642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 63
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b6ba078f169d220800000000000000
+      internalID: 2511145986905828237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 63
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97df944ef8042fb20800000000000000
+      internalID: 3166664474749435257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 63
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5596dcf601b12a0800000000000000
+      internalID: -6765795942820391477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_5
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 31
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ea1c4f9e56ea5b00800000000000000
+      internalID: 818219576395045608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956e44d588e05f880800000000000000
+      internalID: -8577933936414103975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 31
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd440d378c4ce65b0800000000000000
+      internalID: -5373140940190890785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 31
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4aa511dacba3d970800000000000000
+      internalID: 8778548986254830156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_9
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 0
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a830e1a46db5ef750800000000000000
+      internalID: 6340606301308846986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 0
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 213ee57a3d708d480800000000000000
+      internalID: -8874334460106054894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: guitar idle white-LEFT_11
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdd069aa60951070800000000000000
+      internalID: 8076520294541483460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      guitar idle white-LEFT_0: 8916607801052993395
+      guitar idle white-LEFT_1: 7153509977686824642
+      guitar idle white-LEFT_10: -8874334460106054894
+      guitar idle white-LEFT_11: 8076520294541483460
+      guitar idle white-LEFT_2: 2511145986905828237
+      guitar idle white-LEFT_3: 3166664474749435257
+      guitar idle white-LEFT_4: -6765795942820391477
+      guitar idle white-LEFT_5: 818219576395045608
+      guitar idle white-LEFT_6: -8577933936414103975
+      guitar idle white-LEFT_7: -5373140940190890785
+      guitar idle white-LEFT_8: 8778548986254830156
+      guitar idle white-LEFT_9: 6340606301308846986
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

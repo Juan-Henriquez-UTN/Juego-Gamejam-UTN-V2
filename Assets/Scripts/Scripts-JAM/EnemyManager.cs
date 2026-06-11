@@ -7,6 +7,7 @@ public class EnemyManager : MonoBehaviour
     public int healthPoints;
     public float shootingRange;
     public float moveSpeed = 2f;
+    public bool finalBoss = false;
 
     public float attackSpeed = 1f;
     public float projectileSpeed = 5f;
@@ -61,7 +62,6 @@ public class EnemyManager : MonoBehaviour
         Vector2 moveDir = (player.transform.position - transform.position).normalized; // Calcular la direccion de movimiento hacia el jugador
         if (!isShooting)
         {
-            Debug.Log(moveDir.x);
             animator.SetFloat("MoveX", moveDir.x);
             animator.SetFloat("MoveY", moveDir.y);
         }
@@ -151,6 +151,10 @@ public class EnemyManager : MonoBehaviour
 
     public void DefeatEnemy()
     {
+        if (finalBoss)
+        {
+            sceneProgressionManager.LoadSceneWithName("Win screen");
+        }
         int levelProgressCounter = PlayerPrefs.GetInt("LevelProgress", 0);
         CharacterCombat playerCombat = FindFirstObjectByType<CharacterCombat>();
         if (levelProgressCounter == 3 && playerCombat != null)
