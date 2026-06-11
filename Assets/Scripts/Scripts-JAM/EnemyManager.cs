@@ -55,6 +55,18 @@ public class EnemyManager : MonoBehaviour
     {
         if (animator == null) return;
         animator.SetBool("IsShooting", isShooting);
+
+        Vector2 moveDir = (player.transform.position - transform.position).normalized; // Calcular la direccion de movimiento hacia el jugador
+        if (!isShooting)
+        {
+            animator.SetFloat("MoveX", moveDir.x);
+            animator.SetFloat("MoveY", moveDir.y);
+        }
+        else
+        {
+            animator.SetFloat("MoveX", 0f);
+            animator.SetFloat("MoveY", 0f);
+        }
     }
 
     public void EnemyMovement(bool isRanged)
