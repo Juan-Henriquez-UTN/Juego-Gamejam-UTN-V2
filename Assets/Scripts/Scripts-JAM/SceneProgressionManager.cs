@@ -9,11 +9,14 @@ public class SceneProgressionManager : MonoBehaviour
 {
     [SerializeField] CharacterMovement characterMovementScript;
     public int enemiesRequiredToDefeat;
-    public int totalEnemies; // Se asigna desde el Inspector igual que enemiesRequiredToDefeat
+    public int totalEnemies;
     public int levelProgress;
     public float levelTimer;
     public TextMeshProUGUI timeText;
-    public Image enemyProgressBar; // Barra de progreso de enemigos derrotados
+    public Image enemyProgressBar; // Barra de progreso para los enemigos
+
+    public AudioSource audioSource;
+    public AudioClip[] levelMusic = new AudioClip[3]; // Una canción por nivel, asignar desde el Inspector
 
     [SerializeField] private bool isFirstLevel;
     [SerializeField] public float[] healthProgression = new float[3];
@@ -25,6 +28,7 @@ public class SceneProgressionManager : MonoBehaviour
         levelTimer = 0;
         totalEnemies = enemiesRequiredToDefeat;
         UpdateEnemyBar();
+
         if (!isFirstLevel)
             levelProgress = PlayerPrefs.GetInt("LevelProgress", 0);
         else
@@ -32,6 +36,8 @@ public class SceneProgressionManager : MonoBehaviour
             levelProgress = 1;
             PlayerPrefs.SetInt("LevelProgress", levelProgress);
         }
+
+        PlayLevelMusic();
     }
 
     void Update()
@@ -44,6 +50,19 @@ public class SceneProgressionManager : MonoBehaviour
         {
             UpdateProgress();
         }
+    }
+
+    void PlayLevelMusic()
+    {
+        if (audioSource == null || levelMusic.Length == 0) return;
+
+        int index = levelProgress - 1; // levelProgress arranca en 1, el array en 0
+        if (index < 0 || index >= levelMusic.Length) return;
+        if (levelMusic[index] == null) return; // Verifica que la canción esté asignada
+
+        audioSource.clip = levelMusic[index]; // Asigna la canción correspondiente al nivel actual
+        audioSource.loop = true;
+        audioSource.Play();
     }
 
     void UpdateEnemyBar()
