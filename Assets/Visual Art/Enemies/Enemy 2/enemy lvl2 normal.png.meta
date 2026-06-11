@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 1eac7a2eca4e9634681b1d448fa85ff6
+guid: 314fa6ea7cbb6184591fcab4a39f6a68
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5417102579245496968
-    second: enemy lvl3 normal_0
+      213: -7822629139799954124
+    second: enemy lvl2 normal_0
   - first:
-      213: 8399836396370782021
-    second: enemy lvl3 normal_1
+      213: -8005993951419093995
+    second: enemy lvl2 normal_1
   - first:
-      213: -7901897733965083336
-    second: enemy lvl3 normal_2
+      213: -1427901349541305794
+    second: enemy lvl2 normal_2
   - first:
-      213: -4742743409815229099
-    second: enemy lvl3 normal_3
+      213: 5726035081632862598
+    second: enemy lvl2 normal_3
   - first:
-      213: -2703669561730934485
-    second: enemy lvl3 normal_4
+      213: 7634951392106432246
+    second: enemy lvl2 normal_4
   - first:
-      213: 7702649234130278738
-    second: enemy lvl3 normal_5
+      213: -1887114902851343533
+    second: enemy lvl2 normal_5
   - first:
-      213: -8128959834470471681
-    second: enemy lvl3 normal_6
+      213: 4472913261426126850
+    second: enemy lvl2 normal_6
   - first:
-      213: -5979104926284342524
-    second: enemy lvl3 normal_7
+      213: -275979670735114590
+    second: enemy lvl2 normal_7
   - first:
-      213: -7153361233597481889
-    second: enemy lvl3 normal_8
+      213: 3554291226535227018
+    second: enemy lvl2 normal_8
   - first:
-      213: -5892635160244089341
-    second: enemy lvl3 normal_9
+      213: 3427464109008950419
+    second: enemy lvl2 normal_9
   - first:
-      213: -8843137899569198944
-    second: enemy lvl3 normal_10
+      213: -762988209551985191
+    second: enemy lvl2 normal_10
   - first:
-      213: -5485995802533763063
-    second: enemy lvl3 normal_11
+      213: -1670705286830749418
+    second: enemy lvl2 normal_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,11 +129,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy lvl3 normal_0
+      name: enemy lvl2 normal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -148,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 875483cb7e592d4b0800000000000000
-      internalID: -5417102579245496968
+      spriteID: 43daa905e30707390800000000000000
+      internalID: -7822629139799954124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_1
+      name: enemy lvl2 normal_1
       rect:
         serializedVersion: 2
         x: 32
@@ -170,14 +183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 547e311c2b6329470800000000000000
-      internalID: 8399836396370782021
+      spriteID: 51c2db33beef4e090800000000000000
+      internalID: -8005993951419093995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_2
+      name: enemy lvl2 normal_2
       rect:
         serializedVersion: 2
         x: 64
@@ -192,14 +205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83d0c8380e1d65290800000000000000
-      internalID: -7901897733965083336
+      spriteID: e322a46b9431f2ce0800000000000000
+      internalID: -1427901349541305794
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_3
+      name: enemy lvl2 normal_3
       rect:
         serializedVersion: 2
         x: 96
@@ -214,14 +227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55d63253ff36e2eb0800000000000000
-      internalID: -4742743409815229099
+      spriteID: 681d624a196f67f40800000000000000
+      internalID: 5726035081632862598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_4
+      name: enemy lvl2 normal_4
       rect:
         serializedVersion: 2
         x: 0
@@ -236,14 +249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b29ddf6bbd2aa7ad0800000000000000
-      internalID: -2703669561730934485
+      spriteID: 6f6c0e3e6dbc4f960800000000000000
+      internalID: 7634951392106432246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_5
+      name: enemy lvl2 normal_5
       rect:
         serializedVersion: 2
         x: 32
@@ -258,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25915c50bae45ea60800000000000000
-      internalID: 7702649234130278738
+      spriteID: 35b23358efe9fc5e0800000000000000
+      internalID: -1887114902851343533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_6
+      name: enemy lvl2 normal_6
       rect:
         serializedVersion: 2
         x: 64
@@ -280,14 +293,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff728f08912203f80800000000000000
-      internalID: -8128959834470471681
+      spriteID: 200307aa9eaf21e30800000000000000
+      internalID: 4472913261426126850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_7
+      name: enemy lvl2 normal_7
       rect:
         serializedVersion: 2
         x: 96
@@ -302,14 +315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40b980a8fb3f50da0800000000000000
-      internalID: -5979104926284342524
+      spriteID: 2aeaa90a3f58b2cf0800000000000000
+      internalID: -275979670735114590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_8
+      name: enemy lvl2 normal_8
       rect:
         serializedVersion: 2
         x: 0
@@ -324,14 +337,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5c3f51bbd72abc90800000000000000
-      internalID: -7153361233597481889
+      spriteID: a8e6be10a01635130800000000000000
+      internalID: 3554291226535227018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_9
+      name: enemy lvl2 normal_9
       rect:
         serializedVersion: 2
         x: 32
@@ -346,14 +359,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30e8ca2da87293ea0800000000000000
-      internalID: -5892635160244089341
+      spriteID: 39411e9927cc09f20800000000000000
+      internalID: 3427464109008950419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_10
+      name: enemy lvl2 normal_10
       rect:
         serializedVersion: 2
         x: 64
@@ -368,14 +381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a8426ceeecd64580800000000000000
-      internalID: -8843137899569198944
+      spriteID: 9d5b7d114425965f0800000000000000
+      internalID: -762988209551985191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_11
+      name: enemy lvl2 normal_11
       rect:
         serializedVersion: 2
         x: 96
@@ -390,8 +403,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 908e0b632e3ddd3b0800000000000000
-      internalID: -5485995802533763063
+      spriteID: 6190616b46670d8e0800000000000000
+      internalID: -1670705286830749418
       vertices: []
       indices: 
       edges: []
@@ -400,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 23b57512580ff1b41902d36e48e91fd6
+    spriteID: 430bd2573bcddd841be214d45e4194d2
     internalID: 0
     vertices: []
     indices: 
@@ -410,18 +423,18 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      enemy lvl3 normal_0: -5417102579245496968
-      enemy lvl3 normal_1: 8399836396370782021
-      enemy lvl3 normal_10: -8843137899569198944
-      enemy lvl3 normal_11: -5485995802533763063
-      enemy lvl3 normal_2: -7901897733965083336
-      enemy lvl3 normal_3: -4742743409815229099
-      enemy lvl3 normal_4: -2703669561730934485
-      enemy lvl3 normal_5: 7702649234130278738
-      enemy lvl3 normal_6: -8128959834470471681
-      enemy lvl3 normal_7: -5979104926284342524
-      enemy lvl3 normal_8: -7153361233597481889
-      enemy lvl3 normal_9: -5892635160244089341
+      enemy lvl2 normal_0: -7822629139799954124
+      enemy lvl2 normal_1: -8005993951419093995
+      enemy lvl2 normal_10: -762988209551985191
+      enemy lvl2 normal_11: -1670705286830749418
+      enemy lvl2 normal_2: -1427901349541305794
+      enemy lvl2 normal_3: 5726035081632862598
+      enemy lvl2 normal_4: 7634951392106432246
+      enemy lvl2 normal_5: -1887114902851343533
+      enemy lvl2 normal_6: 4472913261426126850
+      enemy lvl2 normal_7: -275979670735114590
+      enemy lvl2 normal_8: 3554291226535227018
+      enemy lvl2 normal_9: 3427464109008950419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
