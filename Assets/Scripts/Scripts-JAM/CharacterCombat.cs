@@ -15,7 +15,7 @@ public class CharacterCombat : MonoBehaviour
     private CharacterMovement characterMovement;
 
     public float damageCooldown = 0.4f;
-    private float damageTimer = 0f;
+    public float damageTimer = 0f;
 
     public float invincibilityCooldown = 2f;
     public float invincibilityTimer = 0f;
@@ -35,7 +35,7 @@ public class CharacterCombat : MonoBehaviour
         loadSceneScript = GameObject.Find("SceneProgressionManager").GetComponent<LoadScene>();
         levelProgressCounter = PlayerPrefs.GetInt("LevelProgress", 0);
         isTargetingEnemy = false;
-        healthPoints = sceneProgressionManager.healthProgression[levelProgressCounter];
+        healthPoints = sceneProgressionManager.healthProgression[levelProgressCounter - 1];
         maxHP = healthPoints;
         UpdateHealthBar();
     }
@@ -56,29 +56,30 @@ public class CharacterCombat : MonoBehaviour
         UpdateHealthBar();
     }
 
-    private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.CompareTag("Enemy") && damageTimer <= 0)
+        if (collision.gameObject.CompareTag("Enemy projectile"))
         {
-            ApplyHitEffect(other.GetComponent<EnemyManager>());
-            damageTimer = damageCooldown;
+            if(invincibilityTimer <= 0)
+            {
+                invincibilityTimer = invincibilityCooldown;
+                healthPoints--;
+            }
+            Destroy(collision.gameObject);
         }
+        
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Enemy projectile")) && invincibilityTimer <= 0)
+        if (collision.gameObject.CompareTag("Enemy") && invincibilityTimer <= 0)
         {
-            Debug.Log("DAMAGE");
+            //Debug.Log("DAMAGE");
             invincibilityTimer = invincibilityCooldown;
             healthPoints--;
-            if(collision.gameObject.CompareTag("Enemy projectile"))
-                Debug.Log("Balaceado");
-            //Destroy(collision.gameObject);
         }
     }
 
-    void ApplyHitEffect(EnemyManager enemy)
+    public void ApplyHitEffect(EnemyManager enemy)
     {
         if (enemy == null) return;
 

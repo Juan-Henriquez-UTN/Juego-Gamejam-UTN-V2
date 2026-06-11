@@ -14,7 +14,7 @@ public class CharacterMovement : MonoBehaviour
         levelProgressCounter = PlayerPrefs.GetInt("LevelProgress", 0);
         characterRB = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        speed = sceneProgressionManager.speedProgression[levelProgressCounter];
+        speed = sceneProgressionManager.speedProgression[levelProgressCounter - 1];
     }
 
     void Update()

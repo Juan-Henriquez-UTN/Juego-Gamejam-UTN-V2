@@ -13,10 +13,9 @@ GameObject:
   - component: {fileID: 141097561023404781}
   - component: {fileID: 6526080766986571711}
   - component: {fileID: 2809518345439444549}
-  - component: {fileID: 5352247066966375077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Projectile
-  m_TagString: Enemy proyectile
+  m_TagString: Enemy projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2247133906864410636, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -176,17 +175,3 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &5352247066966375077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4413063149615462312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7e37982a55f4f546a776a76712a07e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerStats: {fileID: 0}
