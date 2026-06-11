@@ -1,21 +1,23 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CharacterCombat : MonoBehaviour
 {
     public float distance;
     public bool isTargetingEnemy;
     public float healthPoints;
+    public float maxHP;
     public float healthPerLevel;
     public int damagePerLevel = 1;
     public float critChance;
     private CharacterMovement characterMovement;
 
-    public float damageCooldown = 0.4f; // Segundos entre ticks de daño
+    public float damageCooldown = 0.4f;
     private float damageTimer = 0f;
 
-    public float invincibilityCooldown = 2f; // Segundos entre ticks de daño
+    public float invincibilityCooldown = 2f;
     private float invincibilityTimer = 0f;
 
     public SceneProgressionManager sceneProgressionManager;
@@ -26,6 +28,7 @@ public class CharacterCombat : MonoBehaviour
     public int expThreshold;
     public int level;
     public TextMeshProUGUI levelText;
+    public Image healthBar; // Imagen con fill type para la barra de vida
 
     void Start()
     {
@@ -33,6 +36,8 @@ public class CharacterCombat : MonoBehaviour
         levelProgressCounter = PlayerPrefs.GetInt("LevelProgress", 0);
         isTargetingEnemy = false;
         healthPoints = sceneProgressionManager.healthProgression[levelProgressCounter];
+        maxHP = healthPoints;
+        UpdateHealthBar();
     }
 
     void Update()
@@ -47,15 +52,9 @@ public class CharacterCombat : MonoBehaviour
 
         if (exp >= expThreshold)
             LevelUp();
-    }
 
-    //private void OnTriggerEnter2D(Collider2D other)
-    //{
-    //    if (other.gameObject.CompareTag("Enemy"))
-    //    {
-    //        ApplyHitEffect(other.GetComponent<EnemyManager>());
-    //    }
-    //}
+        UpdateHealthBar();
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -68,7 +67,7 @@ public class CharacterCombat : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Enemy proyectile")) && invincibilityTimer <= 0) //Diferentes tags segun tipo de enemigo y ataque para distintos damage
+        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Enemy proyectile")) && invincibilityTimer <= 0)
         {
             Debug.Log("DAMAGE");
             invincibilityTimer = invincibilityCooldown;
@@ -78,9 +77,8 @@ public class CharacterCombat : MonoBehaviour
 
     void ApplyHitEffect(EnemyManager enemy)
     {
-        if (enemy == null) return; 
+        if (enemy == null) return;
 
-        // Tirar crítico
         float randomNum = UnityEngine.Random.Range(1.0f, 100.0f);
         int critRoll = Mathf.RoundToInt(randomNum);
         bool isCrit = critRoll < critChance;
@@ -90,17 +88,14 @@ public class CharacterCombat : MonoBehaviour
         else
             enemy.TakeDamage(damagePerLevel);
 
-        // Efecto según nivel
         switch (levelProgressCounter)
         {
             case 0:
-                // Solo daño, sin efecto extra
                 break;
             case 1:
-                enemy.ApplySlow(2f, 0.4f); // 2 segundos, 40% de velocidad
+                enemy.ApplySlow(2f, 0.4f);
                 break;
             case 2:
-                // La curación se aplica al derrotar, no al golpear (ver EnemyManager)
                 break;
         }
     }
@@ -108,6 +103,7 @@ public class CharacterCombat : MonoBehaviour
     public void Heal(float amount)
     {
         healthPoints += amount;
+        healthPoints = Mathf.Min(healthPoints, maxHP); // No superar el máximo 
         Debug.Log($"Curado! HP actual: {healthPoints}");
     }
 
@@ -119,9 +115,16 @@ public class CharacterCombat : MonoBehaviour
     public void LevelUp()
     {
         level++;
-        healthPoints += healthPerLevel;
-        damagePerLevel++;
+        maxHP += healthPerLevel; // El techo de HP sube con cada nivel
+        healthPoints += healthPerLevel; // Al subir de nivel, el jugador también recupera la cantidad de HP que subió el techo, para no quedarse atrás
+        damagePerLevel++; 
         exp = 0;
-        levelText.text = ("Lvl " + level.ToString());
+        levelText.text = ("Lvl " + level.ToString()); // Actualiza el texto del nivel en la UI
+    }
+
+    void UpdateHealthBar()
+    {
+        if (healthBar != null) 
+            healthBar.fillAmount = healthPoints / maxHP; 
     }
 }
