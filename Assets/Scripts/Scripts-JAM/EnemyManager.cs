@@ -135,6 +135,7 @@ public class EnemyManager : MonoBehaviour
 
     public void ApplySlow(float duration, float speedMultiplier)
     {
+        Debug.Log("Slowed");
         if (!isSlowed)
             originalSpeed = moveSpeed;
 
@@ -147,7 +148,7 @@ public class EnemyManager : MonoBehaviour
     {
         int levelProgressCounter = PlayerPrefs.GetInt("LevelProgress", 0);
         CharacterCombat playerCombat = FindFirstObjectByType<CharacterCombat>();
-        if (levelProgressCounter == 2 && playerCombat != null)
+        if (levelProgressCounter == 3 && playerCombat != null)
         {
             playerCombat.Heal(sceneProgressionManager.healAmount);
         }

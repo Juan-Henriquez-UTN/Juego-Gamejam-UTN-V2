@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Projectile flying
+  m_Name: E2 shooting
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,9 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 2247133906864410636, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
+      value: {fileID: -5911493901820233644, guid: 4cbe741746a04b84eba4179193cac6d7, type: 3}
     - time: 0.016666668
-      value: {fileID: 5761422565960754650, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
-    - time: 0.033333335
-      value: {fileID: -7685771842209355988, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
-    - time: 0.05
-      value: {fileID: 2509009952219921503, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
+      value: {fileID: -703424391161986715, guid: 4cbe741746a04b84eba4179193cac6d7, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,16 +46,14 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 2247133906864410636, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
-    - {fileID: 5761422565960754650, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
-    - {fileID: -7685771842209355988, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
-    - {fileID: 2509009952219921503, guid: 8e20c36c6757e77408cba4749ec8dc3a, type: 3}
+    - {fileID: -5911493901820233644, guid: 4cbe741746a04b84eba4179193cac6d7, type: 3}
+    - {fileID: -703424391161986715, guid: 4cbe741746a04b84eba4179193cac6d7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.06666667
+    m_StopTime: 0.033333335
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

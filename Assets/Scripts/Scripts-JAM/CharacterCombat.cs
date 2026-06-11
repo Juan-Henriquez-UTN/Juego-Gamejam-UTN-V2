@@ -18,7 +18,7 @@ public class CharacterCombat : MonoBehaviour
     private float damageTimer = 0f;
 
     public float invincibilityCooldown = 2f;
-    private float invincibilityTimer = 0f;
+    public float invincibilityTimer = 0f;
 
     public SceneProgressionManager sceneProgressionManager;
     public LoadScene loadSceneScript;
@@ -67,11 +67,14 @@ public class CharacterCombat : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Enemy proyectile")) && invincibilityTimer <= 0)
+        if ((collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Enemy projectile")) && invincibilityTimer <= 0)
         {
             Debug.Log("DAMAGE");
             invincibilityTimer = invincibilityCooldown;
             healthPoints--;
+            if(collision.gameObject.CompareTag("Enemy projectile"))
+                Debug.Log("Balaceado");
+            //Destroy(collision.gameObject);
         }
     }
 
@@ -90,12 +93,12 @@ public class CharacterCombat : MonoBehaviour
 
         switch (levelProgressCounter)
         {
-            case 0:
-                break;
             case 1:
-                enemy.ApplySlow(2f, 0.4f);
                 break;
             case 2:
+                enemy.ApplySlow(2f, 0.4f);
+                break;
+            case 3:
                 break;
         }
     }
