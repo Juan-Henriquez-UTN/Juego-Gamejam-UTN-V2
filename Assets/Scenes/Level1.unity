@@ -959,9 +959,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterMovementScript: {fileID: 1446912793}
   enemiesRequiredToDefeat: 10
+  totalEnemies: 0
   levelProgress: 0
   levelTimer: 0
   timeText: {fileID: 182444038}
+  enemyProgressBar: {fileID: 0}
   isFirstLevel: 1
   healthProgression:
   - 1
@@ -1505,6 +1507,7 @@ MonoBehaviour:
   distance: 0
   isTargetingEnemy: 0
   healthPoints: 0
+  maxHP: 0
   healthPerLevel: 1
   damagePerLevel: 1
   critChance: 0
@@ -1516,6 +1519,7 @@ MonoBehaviour:
   expThreshold: 2
   level: 0
   levelText: {fileID: 189085670}
+  healthBar: {fileID: 0}
 --- !u!1 &1521006982
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,7 +2211,7 @@ PrefabInstance:
       objectReference: {fileID: 971924168}
     - target: {fileID: 6856708175040741085, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
       propertyPath: m_Name
-      value: Enemy
+      value: Level 1 Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 9014094681098165019, guid: 2c43c47619bec4945a9b73382fcece55, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2413,7 +2417,7 @@ PrefabInstance:
       objectReference: {fileID: 971924168}
     - target: {fileID: 4141974239611364667, guid: deb000bb81d2989469f02ba610e1df6a, type: 3}
       propertyPath: m_Name
-      value: Ranged enemy
+      value: Level 2 enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
