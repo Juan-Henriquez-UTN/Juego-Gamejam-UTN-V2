@@ -70,7 +70,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +84,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -136,9 +136,9 @@ TextureImporter:
       name: enemy lvl2 normal_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 63
-        width: 22
+        x: 0
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,9 +158,9 @@ TextureImporter:
       name: enemy lvl2 normal_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 31
-        width: 19
+        x: 32
+        y: 64
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: enemy lvl2 normal_2
       rect:
         serializedVersion: 2
-        x: 37
-        y: 63
-        width: 22
-        height: 33
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: enemy lvl2 normal_3
       rect:
         serializedVersion: 2
-        x: 38
-        y: 31
-        width: 19
-        height: 33
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,9 +224,9 @@ TextureImporter:
       name: enemy lvl2 normal_4
       rect:
         serializedVersion: 2
-        x: 69
-        y: 63
-        width: 22
+        x: 0
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -246,9 +246,9 @@ TextureImporter:
       name: enemy lvl2 normal_5
       rect:
         serializedVersion: 2
-        x: 70
-        y: 31
-        width: 19
+        x: 32
+        y: 32
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: enemy lvl2 normal_6
       rect:
         serializedVersion: 2
-        x: 101
-        y: 63
-        width: 22
-        height: 33
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,10 +290,10 @@ TextureImporter:
       name: enemy lvl2 normal_7
       rect:
         serializedVersion: 2
-        x: 102
-        y: 31
-        width: 19
-        height: 33
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +312,10 @@ TextureImporter:
       name: enemy lvl2 normal_8
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 22
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,9 +334,9 @@ TextureImporter:
       name: enemy lvl2 normal_9
       rect:
         serializedVersion: 2
-        x: 37
+        x: 32
         y: 0
-        width: 22
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: enemy lvl2 normal_10
       rect:
         serializedVersion: 2
-        x: 69
+        x: 64
         y: 0
-        width: 22
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,9 +378,9 @@ TextureImporter:
       name: enemy lvl2 normal_11
       rect:
         serializedVersion: 2
-        x: 102
+        x: 96
         y: 0
-        width: 22
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -400,7 +400,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 430bd2573bcddd841be214d45e4194d2
     internalID: 0
     vertices: []
     indices: 
@@ -409,7 +409,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      enemy lvl2 normal_0: -7822629139799954124
+      enemy lvl2 normal_1: -8005993951419093995
+      enemy lvl2 normal_10: -762988209551985191
+      enemy lvl2 normal_11: -1670705286830749418
+      enemy lvl2 normal_2: -1427901349541305794
+      enemy lvl2 normal_3: 5726035081632862598
+      enemy lvl2 normal_4: 7634951392106432246
+      enemy lvl2 normal_5: -1887114902851343533
+      enemy lvl2 normal_6: 4472913261426126850
+      enemy lvl2 normal_7: -275979670735114590
+      enemy lvl2 normal_8: 3554291226535227018
+      enemy lvl2 normal_9: 3427464109008950419
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

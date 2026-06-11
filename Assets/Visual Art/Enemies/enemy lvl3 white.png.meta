@@ -67,7 +67,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,7 +105,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,10 +133,10 @@ TextureImporter:
       name: enemy lvl3 white_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 63
-        width: 29
-        height: 33
+        x: 0
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: enemy lvl3 white_1
       rect:
         serializedVersion: 2
-        x: 5
-        y: 31
-        width: 25
-        height: 33
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -177,10 +177,10 @@ TextureImporter:
       name: enemy lvl3 white_2
       rect:
         serializedVersion: 2
-        x: 34
-        y: 63
-        width: 29
-        height: 33
+        x: 64
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +199,10 @@ TextureImporter:
       name: enemy lvl3 white_3
       rect:
         serializedVersion: 2
-        x: 37
-        y: 31
-        width: 25
-        height: 33
+        x: 96
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,10 +221,10 @@ TextureImporter:
       name: enemy lvl3 white_4
       rect:
         serializedVersion: 2
-        x: 66
-        y: 63
-        width: 29
-        height: 33
+        x: 0
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -243,10 +243,10 @@ TextureImporter:
       name: enemy lvl3 white_5
       rect:
         serializedVersion: 2
-        x: 69
-        y: 31
-        width: 25
-        height: 33
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,10 +265,10 @@ TextureImporter:
       name: enemy lvl3 white_6
       rect:
         serializedVersion: 2
-        x: 97
-        y: 0
-        width: 29
-        height: 64
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,10 +287,10 @@ TextureImporter:
       name: enemy lvl3 white_7
       rect:
         serializedVersion: 2
-        x: 98
-        y: 63
-        width: 29
-        height: 33
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,9 +309,9 @@ TextureImporter:
       name: enemy lvl3 white_8
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 29
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: enemy lvl3 white_9
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 29
-        height: 33
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,9 +353,9 @@ TextureImporter:
       name: enemy lvl3 white_10
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 29
+        width: 32
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -371,11 +371,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: enemy lvl3 white_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b9bebf6f921d44198f1003219b833e
+      internalID: 658368602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b3330f9244ca99147bc4ae139e27abf0
     internalID: 0
     vertices: []
     indices: 
@@ -384,7 +406,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      enemy lvl3 white_0: 6206162195696573028
+      enemy lvl3 white_1: -5045644810667998154
+      enemy lvl3 white_10: -6260260482401689481
+      enemy lvl3 white_11: 658368602
+      enemy lvl3 white_2: -1130376957239597399
+      enemy lvl3 white_3: -3047789033062684570
+      enemy lvl3 white_4: -1287724540347110320
+      enemy lvl3 white_5: 2770682800988089266
+      enemy lvl3 white_6: 5260536916593906320
+      enemy lvl3 white_7: -7036139011630212946
+      enemy lvl3 white_8: 3948357297024683532
+      enemy lvl3 white_9: 6106341725942303588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

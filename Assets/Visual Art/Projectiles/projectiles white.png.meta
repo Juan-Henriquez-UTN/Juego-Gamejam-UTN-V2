@@ -1,43 +1,76 @@
 fileFormatVersion: 2
-guid: 1eac7a2eca4e9634681b1d448fa85ff6
+guid: 8e20c36c6757e77408cba4749ec8dc3a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5417102579245496968
-    second: enemy lvl3 normal_0
+      213: -6236102995681159853
+    second: projectiles white_0
   - first:
-      213: 8399836396370782021
-    second: enemy lvl3 normal_1
+      213: 182355320404572307
+    second: projectiles white_1
   - first:
-      213: -7901897733965083336
-    second: enemy lvl3 normal_2
+      213: 9157492697526098043
+    second: projectiles white_2
   - first:
-      213: -4742743409815229099
-    second: enemy lvl3 normal_3
+      213: 6653001540837190041
+    second: projectiles white_3
   - first:
-      213: -2703669561730934485
-    second: enemy lvl3 normal_4
+      213: 2247133906864410636
+    second: projectiles white_4
   - first:
-      213: 7702649234130278738
-    second: enemy lvl3 normal_5
+      213: 5761422565960754650
+    second: projectiles white_5
   - first:
-      213: -8128959834470471681
-    second: enemy lvl3 normal_6
+      213: -7685771842209355988
+    second: projectiles white_6
   - first:
-      213: -5979104926284342524
-    second: enemy lvl3 normal_7
+      213: 2509009952219921503
+    second: projectiles white_7
   - first:
-      213: -7153361233597481889
-    second: enemy lvl3 normal_8
+      213: -1645323549089799758
+    second: projectiles white_8
   - first:
-      213: -5892635160244089341
-    second: enemy lvl3 normal_9
+      213: 3126133655509171752
+    second: projectiles white_9
   - first:
-      213: -8843137899569198944
-    second: enemy lvl3 normal_10
+      213: 8341487654902268407
+    second: projectiles white_10
   - first:
-      213: -5485995802533763063
-    second: enemy lvl3 normal_11
+      213: -1606367025274281288
+    second: projectiles white_11
+  - first:
+      213: -6406934940802595777
+    second: projectiles white_12
+  - first:
+      213: -1203680001526520450
+    second: projectiles white_13
+  - first:
+      213: -2541666789685384265
+    second: projectiles white_14
+  - first:
+      213: 6608977668435897577
+    second: projectiles white_15
+  - first:
+      213: -7124716732457042978
+    second: projectiles white_16
+  - first:
+      213: 5809226714147529765
+    second: projectiles white_17
+  - first:
+      213: -6061348728453075264
+    second: projectiles white_18
+  - first:
+      213: 5920909517783546455
+    second: projectiles white_19
+  - first:
+      213: -1099845898216745201
+    second: projectiles white_20
+  - first:
+      213: -3302149353942548401
+    second: projectiles white_21
+  - first:
+      213: 3077244362300743503
+    second: projectiles white_22
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -133,7 +166,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy lvl3 normal_0
+      name: projectiles white_0
       rect:
         serializedVersion: 2
         x: 0
@@ -148,14 +181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 875483cb7e592d4b0800000000000000
-      internalID: -5417102579245496968
+      spriteID: 355dcaf9d59e479a0800000000000000
+      internalID: -6236102995681159853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_1
+      name: projectiles white_1
       rect:
         serializedVersion: 2
         x: 32
@@ -170,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 547e311c2b6329470800000000000000
-      internalID: 8399836396370782021
+      spriteID: 398fd9f923bd78200800000000000000
+      internalID: 182355320404572307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_2
+      name: projectiles white_2
       rect:
         serializedVersion: 2
         x: 64
@@ -192,14 +225,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83d0c8380e1d65290800000000000000
-      internalID: -7901897733965083336
+      spriteID: b78d6450713f51f70800000000000000
+      internalID: 9157492697526098043
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_3
+      name: projectiles white_3
       rect:
         serializedVersion: 2
         x: 96
@@ -214,14 +247,102 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 55d63253ff36e2eb0800000000000000
-      internalID: -4742743409815229099
+      spriteID: 9992abbf6a5345c50800000000000000
+      internalID: 6653001540837190041
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_4
+      name: projectiles white_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c009369e16c6f2f10800000000000000
+      internalID: 2247133906864410636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles white_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad5a2056c4fa4ff40800000000000000
+      internalID: 5761422565960754650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles white_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2769600b37a65590800000000000000
+      internalID: -7685771842209355988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles white_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5cfcfb124bc1d220800000000000000
+      internalID: 2509009952219921503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles white_8
       rect:
         serializedVersion: 2
         x: 0
@@ -236,14 +357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b29ddf6bbd2aa7ad0800000000000000
-      internalID: -2703669561730934485
+      spriteID: 2b1eaeb03f2aa29e0800000000000000
+      internalID: -1645323549089799758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_5
+      name: projectiles white_9
       rect:
         serializedVersion: 2
         x: 32
@@ -258,14 +379,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 25915c50bae45ea60800000000000000
-      internalID: 7702649234130278738
+      spriteID: 82e74092ff1426b20800000000000000
+      internalID: 3126133655509171752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_6
+      name: projectiles white_10
       rect:
         serializedVersion: 2
         x: 64
@@ -280,17 +401,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ff728f08912203f80800000000000000
-      internalID: -8128959834470471681
+      spriteID: 7f181c8b3dae2c370800000000000000
+      internalID: 8341487654902268407
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_7
+      name: projectiles white_11
       rect:
         serializedVersion: 2
-        x: 96
+        x: 192
         y: 32
         width: 32
         height: 32
@@ -302,14 +423,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 40b980a8fb3f50da0800000000000000
-      internalID: -5979104926284342524
+      spriteID: 8b220af83b905b9e0800000000000000
+      internalID: -1606367025274281288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_8
+      name: projectiles white_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f344c62ed9ef517a0800000000000000
+      internalID: -6406934940802595777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles white_13
       rect:
         serializedVersion: 2
         x: 0
@@ -324,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f5c3f51bbd72abc90800000000000000
-      internalID: -7153361233597481889
+      spriteID: e7525cd7a6bab4fe0800000000000000
+      internalID: -1203680001526520450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_9
+      name: projectiles white_14
       rect:
         serializedVersion: 2
         x: 32
@@ -346,14 +489,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30e8ca2da87293ea0800000000000000
-      internalID: -5892635160244089341
+      spriteID: 7bb2567658f2abcd0800000000000000
+      internalID: -2541666789685384265
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_10
+      name: projectiles white_15
       rect:
         serializedVersion: 2
         x: 64
@@ -368,14 +511,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a8426ceeecd64580800000000000000
-      internalID: -8843137899569198944
+      spriteID: 9ec6c9f6c2ec7bb50800000000000000
+      internalID: 6608977668435897577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy lvl3 normal_11
+      name: projectiles white_16
       rect:
         serializedVersion: 2
         x: 96
@@ -390,8 +533,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 908e0b632e3ddd3b0800000000000000
-      internalID: -5485995802533763063
+      spriteID: edbbd9451ebef1d90800000000000000
+      internalID: -7124716732457042978
       vertices: []
       indices: 
       edges: []
@@ -400,7 +543,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 23b57512580ff1b41902d36e48e91fd6
+    spriteID: 85f2cca7b1786134e881e1358fa49de2
     internalID: 0
     vertices: []
     indices: 
@@ -410,18 +553,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      enemy lvl3 normal_0: -5417102579245496968
-      enemy lvl3 normal_1: 8399836396370782021
-      enemy lvl3 normal_10: -8843137899569198944
-      enemy lvl3 normal_11: -5485995802533763063
-      enemy lvl3 normal_2: -7901897733965083336
-      enemy lvl3 normal_3: -4742743409815229099
-      enemy lvl3 normal_4: -2703669561730934485
-      enemy lvl3 normal_5: 7702649234130278738
-      enemy lvl3 normal_6: -8128959834470471681
-      enemy lvl3 normal_7: -5979104926284342524
-      enemy lvl3 normal_8: -7153361233597481889
-      enemy lvl3 normal_9: -5892635160244089341
+      projectiles white_0: -6236102995681159853
+      projectiles white_1: 182355320404572307
+      projectiles white_10: 8341487654902268407
+      projectiles white_11: -1606367025274281288
+      projectiles white_12: -6406934940802595777
+      projectiles white_13: -1203680001526520450
+      projectiles white_14: -2541666789685384265
+      projectiles white_15: 6608977668435897577
+      projectiles white_16: -7124716732457042978
+      projectiles white_2: 9157492697526098043
+      projectiles white_3: 6653001540837190041
+      projectiles white_4: 2247133906864410636
+      projectiles white_5: 5761422565960754650
+      projectiles white_6: -7685771842209355988
+      projectiles white_7: 2509009952219921503
+      projectiles white_8: -1645323549089799758
+      projectiles white_9: 3126133655509171752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
