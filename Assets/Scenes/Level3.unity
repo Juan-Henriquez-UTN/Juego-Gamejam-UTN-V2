@@ -2952,9 +2952,9 @@ MonoBehaviour:
   enemyType1: {fileID: 860508990}
   enemyType2: {fileID: 626272741}
   enemyType3: {fileID: 1287403434}
-  enemy1spawnCount: 6
-  enemy2spawnCount: 3
-  enemy3spawnCount: 2
+  enemy1spawnCount: 3
+  enemy2spawnCount: 2
+  enemy3spawnCount: 1
   spawnTimer: 0
   spawnTimeDifference: 7
 --- !u!4 &1242796726
@@ -4192,9 +4192,9 @@ MonoBehaviour:
   enemyType1: {fileID: 860508990}
   enemyType2: {fileID: 626272741}
   enemyType3: {fileID: 1287403434}
-  enemy1spawnCount: 6
-  enemy2spawnCount: 3
-  enemy3spawnCount: 2
+  enemy1spawnCount: 3
+  enemy2spawnCount: 2
+  enemy3spawnCount: 1
   spawnTimer: 0
   spawnTimeDifference: 7
 --- !u!4 &2012087700
