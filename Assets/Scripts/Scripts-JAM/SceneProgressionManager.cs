@@ -9,20 +9,24 @@ public class SceneProgressionManager : MonoBehaviour
 {
     [SerializeField] CharacterMovement characterMovementScript;
     public int enemiesRequiredToDefeat;
+    public int totalEnemies; // Se asigna desde el Inspector igual que enemiesRequiredToDefeat
     public int levelProgress;
     public float levelTimer;
     public TextMeshProUGUI timeText;
+    public Image enemyProgressBar; // Barra de progreso de enemigos derrotados
 
     [SerializeField] private bool isFirstLevel;
     [SerializeField] public float[] healthProgression = new float[3];
     [SerializeField] public float[] speedProgression = new float[3];
-    [SerializeField] public float healAmount = 10f; // AGREGADO: curación por enemigo derrotado en nivel 3
+    [SerializeField] public float healAmount = 10f;
 
     void Start()
     {
         levelTimer = 0;
+        totalEnemies = enemiesRequiredToDefeat;
+        UpdateEnemyBar();
         if (!isFirstLevel)
-            levelProgress = PlayerPrefs.GetInt("LevelProgress", 0); 
+            levelProgress = PlayerPrefs.GetInt("LevelProgress", 0);
         else
         {
             levelProgress = 1;
@@ -34,6 +38,7 @@ public class SceneProgressionManager : MonoBehaviour
     {
         levelTimer += Time.deltaTime;
         DisplayTime(levelTimer);
+        UpdateEnemyBar();
 
         if (enemiesRequiredToDefeat == 0)
         {
@@ -41,12 +46,17 @@ public class SceneProgressionManager : MonoBehaviour
         }
     }
 
+    void UpdateEnemyBar()
+    {
+        if (enemyProgressBar != null)
+            enemyProgressBar.fillAmount = 1f - ((float)enemiesRequiredToDefeat / totalEnemies);
+    }
+
     void UpdateProgress()
     {
         levelProgress++;
         PlayerPrefs.SetInt("LevelProgress", levelProgress);
         LoadSceneWithName("Level" + levelProgress.ToString());
-        // LOAD NEXT LEVEL
     }
 
     public void LoadSceneWithName(string sceneName)
