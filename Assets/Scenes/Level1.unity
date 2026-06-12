@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseScreen: {fileID: 1798257340}
-  loreScreen: {fileID: 0}
+  loreScreen: {fileID: 1346908776}
 --- !u!4 &63103248
 Transform:
   m_ObjectHideFlags: 0
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   levelTimer: 0
   timeText: {fileID: 1995606113}
   enemyProgressBar: {fileID: 827727924}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 971924170}
   levelMusic:
   - {fileID: 8300000, guid: adf28a28892d1874c912ab1a6558a68e, type: 3}
   - {fileID: 8300000, guid: 8b3f15ee10301ea48b864ae8d0f59012, type: 3}
@@ -1472,7 +1472,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1983,6 +1983,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f55dba41fe0491841aa5190850d5c230, type: 3}
+--- !u!1 &1346908776 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2378183162222328498, guid: f55dba41fe0491841aa5190850d5c230, type: 3}
+  m_PrefabInstance: {fileID: 1346908775}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1365958556
 GameObject:
   m_ObjectHideFlags: 0
